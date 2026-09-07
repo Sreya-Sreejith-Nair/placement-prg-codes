@@ -12,6 +12,7 @@
 # 2
 # Output:
 # 0 0 0 1 1
+
 n=int(input())
 a=list(map(int,input().split()))
 c=int(input())
