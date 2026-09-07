@@ -1,2 +1,2 @@
 # placement-prg-codes
-self solved code pgms
+coding programmes solved during placement training
