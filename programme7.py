@@ -14,4 +14,13 @@ for i in range(c):
             a[i][j]=a[i-1][j]     
         else:
             a[i][j]=a[i-1][j]+a[i][j-d[i]]
-print(a[c-1][w-1])
+print("c/w",end="\t")
+for i in range(w):
+    print(i,end="\t")
+print()
+for i in range(c):
+    print(d[i],end="\t")
+    for j in range(w):
+        print(a[i][j],end="\t")
+    print("")
+print("Total ways",a[c-1][w-1])
