@@ -1,5 +1,6 @@
 n=input().strip()
 n=n.replace(",","")
+n=n.replace(" ","")
 a=[]
 t=[]
 i=0
@@ -16,8 +17,7 @@ while i<len(n):
     else:
         a.append(n[i])
         i+=1
-a=sorted(a)
+a=sorted(list(set(a)))
 t=sorted(t,key=lambda x: x[1])
 a.extend(t)
 print(", ".join(a))
-        
